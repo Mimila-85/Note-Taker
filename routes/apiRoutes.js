@@ -4,7 +4,7 @@ const path = require("path");
 // UUID package to create unique ids.
 const { v4: uuidv4 } = require("uuid");
 
-const dbPath = path.join("./develop/db/db.json");
+const dbPath = path.join(__dirname, "../develop/db/db.json");
 
 let arrayNotes = [];
 
