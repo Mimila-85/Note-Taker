@@ -39,7 +39,7 @@ module.exports = app => {
         res.json(newNote);        
     });
 
-    app.delete("/api/notes:id", (req, res) => {
+    app.delete("/api/notes/:id", (req, res) => {
         const id = req.params.id;
 
         fs.readFile(dbPath, "utf8", (error, data) =>{
